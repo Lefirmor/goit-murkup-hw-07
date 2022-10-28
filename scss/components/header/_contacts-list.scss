@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &:hover .contacts__envelope-icon,
+  &:focus .contacts__envelope-icon,
+  &:hover .contacts__smartphone-icon,
+  &:focus .contacts__smartphone-icon {
+    fill: $accent-color;
+  }
+}
+
+.contacts__envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 12px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
