@@ -29,10 +29,11 @@
   <body>
     <header class="header">
       <div class="header__lists container">
+        <a href="" class=" header-logo">Web<span class="logo__span">Studio</span></a>
+       
+        
+        <a href="./index"></a>
         <nav class="navigation">
-          <a href="" class="logo">Web<span class="logo__span">Studio</span></a>
-
-          <a href="./index.html"></a>
 
           <ul class="navigation__list list">
             <li>
@@ -57,7 +58,7 @@
           </li>
           <li>
             <a href="" class="contacts__link">
-              <svg class="contacts__smartphone-icon">
+              <svg class="contacts__smartphone-icon ">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
 
@@ -65,14 +66,87 @@
             </a>
           </li>
         </ul>
+        <!-- <ul class = "link-list">
+          <li class="link-list__item">
+            <p class = "link-list__paragraph">Instagram</p>
+          </li>
+          <li class="link-list__item">
+            <p class = "link-list__paragraph">Twitter</p>
+          </li>
+          <li class="link-list__item">
+            <p class = "link-list__paragraph">Facebook</p>
+          </li>
+          <li class="link-list__item">
+            <p class = "link-list__paragraph">LinkedIn</p>
+          </li>
+          
+        </ul> -->
       </div>
+      <div class="tel-nav container">
+        <a href="" class=" header-logo-mobile logo">Web<span class="logo__span">Studio</span></a>
+      <button type="button" class = "menu-open-btn" data-menu-open>
+        <svg class = "menu-button__icon">
+          <use class= "menu-button__icon-menu" href = "./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="menu is-hidden " data-menu>
+        <button type = "button" class = "menu-close-btn"data-menu-close ">
+        <svg class = "menu-button__icon" aria-label="mobile-menu-switcher">
+
+          <use class= "menu-button__icon-cross" href = "./images/symbol-defs.svg#icon-close-black"></use>
+        </svg>
+       </button>
+        <div class="menu-wrapper-top">
+          <ul class = "menu-list menu-container">
+            <li class = "menu-list__item">
+              <a href = "/"class= "menu-list__link ">Студія</a>
+            </li>
+            <li class = "menu-list__item">
+              <a href = "./portfolio.html"class ="menu-list__link menu-current">Портфоліо</a>
+            </li>
+            <li class = "menu-list__item">
+              <a href = ""class ="menu-list__link">Контакти</a>
+            </li>
+          </ul>
+        </div> 
+        
+
+          <div class="menu-wrapper-bottom">
+            <ul class = "menu-contacts menu-container">
+              <li class = "menu-contacts__item">
+                  <p class = "menu-contacts__paragraph menu-contacts__paragraph--phone">+38 096 111 11 11</p>
+              </li>
+              <li class = "menu-contacts__item">
+                <p class = "menu-contacts__paragraph menu-contacts__paragraph--email">info@devstudio.com</p>
+              </li>
+            </ul>
+  
+            <ul class="link-list menu-container">
+              <li class="link-list__item">
+                <p class="link-list__paragraph">Instagram</p>
+              </li>
+              <li class="link-list__item">
+                <p class="link-list__paragraph">Twitter</p>
+              </li>
+              <li class="link-list__item">
+                <p class="link-list__paragraph">Facebook</p>
+              </li>
+              <li class="link-list__item">
+                <p class="link-list__paragraph">LinkedIn</p>
+              </li>
+            </ul>
+          </div>
+          
+      </div>
+      
     </header>
 
     <main>
-      <section class="portfolio section">
+      <section class="portfolio section ">
         <h1 class="visually-hidden">list</h1>
         <!-- buttons -->
-        <div class="container">
+        <div class="portfolio__button-wrapper container">
           <ul class="portfolio-buttons__list">
             <li><button type="button" class="portfolio-buttons__button">Усі</button></li>
             <li><button type="button" class="portfolio-buttons__button">Веб-сайти</button></li>
@@ -127,8 +201,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__paragraph">Дизайн</p>
                 </div></div>
               </a>
             </li>
@@ -151,8 +225,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__paragraph">Додаток</p>
                 </div></div>
               </a>
             </li>
@@ -175,8 +249,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Проєкт Prime</h2>
+                  <p class="card__paragraph">Маркетинг</p>
                 </div></div>
               </a>
             </li>
@@ -199,8 +273,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Проєкт Boxes</h2>
+                  <p class="card__paragraph">Додаток</p>
                 </div></div>
               </a>
             </li>
@@ -223,7 +297,7 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
+                  <h2 class="card__title">Inspiration has no Borders</h2>
                   <p class="card__paragraph">Веб-сайт</p>
                 </div></div>
               </a>
@@ -247,8 +321,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Видання Limited Edition</h2>
+                  <p class="card__paragraph">Дизайн</p>
                 </div></div>
               </a>
             </li>
@@ -271,8 +345,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Проєкт LAB</h2>
+                  <p class="card__paragraph">Маркетинг</p>
                 </div></div>
               </a>
             </li>
@@ -295,8 +369,8 @@
                 </div>
              
                 <div class="card__description">
-                  <h2 class="card__title">Технокряк</h2>
-                  <p class="card__paragraph">Веб-сайт</p>
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__paragraph">Додаток</p>
                 </div></div>
               </a>
             </li>
@@ -307,51 +381,54 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__elements container">
-        <div class="adress-container">
-          <a href="" class="logo"
-            >Web<span class="logo__footer-span">Studio</span></a
-          >
-          <address class="address">
-            <p class="address__paragraph">м. Київ, пр-т Лесі Українки, 26</p>
-            <a class="address__link" href="info@devstudio.com"
-              >info@devstudio.com</a
+        <div class="adress-icons-wrapper">
+          <div class="adress-container">
+            <a href="" class="logo"
+              >Web<span class="logo__footer-span">Studio</span></a
             >
-            <a class="address__link" href="+380961111111">+380961111111</a>
-          </address>
+            <address class="address">
+              <p class="address__paragraph">м. Київ, пр-т Лесі Українки, 26</p>
+              <a class="address__link" href="info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="address__link" href="+380961111111">+380961111111</a>
+            </address>
+          </div>
+          <div class="footer__icons">
+            <p class="footer__paragraph">приєднуйтесь</p>
+            <ul class="footer__list">
+              <li>
+                <a href="" class="footer__link">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__link">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__link">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__link">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__icons">
-          <p class="footer__paragraph">приєднуйтесь</p>
-          <ul class="footer__list">
-            <li>
-              <a href="" class="footer__link">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__link">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__link">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__link">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+       
         <form class="footer-form">
           <label class="footer-form__label">
             <p class="footer-form__paragraph">Підпишіться на розсилку</p>
@@ -373,6 +450,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> 
+    <script src="./js/menu-button.js"></script>
   </body>
 </html>

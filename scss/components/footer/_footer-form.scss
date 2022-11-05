@@ -1,54 +1,55 @@
+.footer-form__container {
+  margin-top: 20px;
+}
 .footer-form__paragraph {
-    display: inline;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: #ffffff;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-form__label {
+  margin-left: 93px;
+}
+.footer-form__field {
+  display: block;
+  width: 100%;
+  @media screen and(min-width: 768px){
+    width: 450px;
+    margin: 0 auto;
   }
-  .footer-form__label {
-    margin-left: 93px;
-  }
-  .footer-form__field {
-    display: block;
-    color: white;
-    margin-left: 93px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-    width: 358px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: transparent;
-  }
-  .formm__field::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-  
-    letter-spacing: 0.03em;
-  
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .footer-form__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    gap: 10px;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-  }
-  .footer-form__icon {
-    width: 24px;
-    height: 24px;
-  }
-  .footer-form__container {
-    display: flex;
-    align-items: baseline;
-    margin-top: 20px;
-    gap: 12px;
-  }
+  color: white;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.footer-form__field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+}
+.footer-form__icon {
+  width: 24px;
+  height: 24px;
+}

@@ -1,5 +1,11 @@
 .footer__icons {
-  margin-left: 70px;
+  display: block;
+  text-align: center;
+  @media screen and(max-width: 767px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
 }
 .footer__paragraph {
   font-weight: 700;
@@ -12,7 +18,12 @@
 }
 
 .footer__list {
+  
   display: flex;
+  justify-content: center;
+  @media screen and(max-width: 444px){
+    flex-wrap: wrap;
+  }
   margin-top: 20px;
   gap: 10px;
 }
